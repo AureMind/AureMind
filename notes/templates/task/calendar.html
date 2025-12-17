@@ -1,0 +1,52 @@
+{% extends 'notes/base.html' %}
+{% load static %}
+
+{% block title %}Calendar{% endblock %}
+
+{% block content %}
+
+<div class="calendar-container">
+  
+  <div class="calendar-header">
+    <h1>{{ month_name }} {{ year }}</h1>
+    <div class="calendar-nav">
+      <a href="{% url 'notes:calendar_month' year=prev_year month=prev_month %}" title="Previous Month">&laquo;</a>
+      <a href="{% url 'notes:calendar' %}" class="btn btn-sm btn-outline-secondary" title="Today">Today</a>
+      <a href="{% url 'notes:calendar_month' year=next_year month=next_month %}" title="Next Month">&raquo;</a>
+    </div>
+  </div>
+
+  <div class="calendar-grid">
+    {% for header in day_headers %}
+      <div class="calendar-day-header">{{ header }}</div>
+    {% endfor %}
+
+    {% for week in weeks %}
+      {% for day in week %}
+        {% if day == 0 %}
+          <div class="calendar-day-cell empty-day"></div>
+        {% else %}
+          <div class="calendar-day-cell {% if day == today_day %}today{% endif %}">
+            
+            <a href="{% url 'notes:calendar_day' year=year month=month day=day %}" class="day-link">
+              <span class="day-number">{{ day }}</span>
+              
+              {% for task_day, tasks in calendar_tasks.items %}
+                {% if task_day == day %}
+                  {% for task in tasks %}
+                    <div class="task-badge" title="{{ task.title }} ({{ task.due_date|time:"h:i A" }})">
+                      {{ task.due_date|time:"h:iA"|lower }} {{ task.title }}
+                    </div>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            </a>
+            
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+
+</div>
+{% endblock %}
