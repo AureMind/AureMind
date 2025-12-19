@@ -108,11 +108,3 @@ This project does not currently include a license. Add one if you plan to distri
 Made with ❤️ as a Software Engineering college project.
 
 ---
-
-If you want, I can also:
-
-* Add **badges (Python, Django, License)**
-* Make it **more professional for recruiters**
-* Add a **Screenshots section**
-
-Just tell me.
