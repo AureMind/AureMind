@@ -1,11 +1,3 @@
-Got it 👍
-The issue is that **wrapping the entire README inside triple backticks breaks Markdown rendering**.
-
-Below is a **proper, clean `README.md` content** — **DO NOT wrap this in ```**.
-Just **copy-paste directly into `README.md`**.
-
----
-
 # AureMind
 
 AureMind is an **AI-assisted Personal Manager web app** built as a college software engineering project. It combines note taking, task tracking, and productivity tools into a simple and intuitive interface to help users organize their daily activities and ideas.
