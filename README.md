@@ -1,4 +1,11 @@
-```markdown
+Got it 👍
+The issue is that **wrapping the entire README inside triple backticks breaks Markdown rendering**.
+
+Below is a **proper, clean `README.md` content** — **DO NOT wrap this in ```**.
+Just **copy-paste directly into `README.md`**.
+
+---
+
 # AureMind
 
 AureMind is an **AI-assisted Personal Manager web app** built as a college software engineering project. It combines note taking, task tracking, and productivity tools into a simple and intuitive interface to help users organize their daily activities and ideas.
@@ -7,34 +14,33 @@ AureMind is an **AI-assisted Personal Manager web app** built as a college softw
 
 AureMind was developed by **Group 10** of the Software Engineering class at Delhi University:
 
-- Dhruv Kashyap  
-- Prashant Nath  
-- Demas Fadel Anggara  
-- Anuj Rajput  
+* Dhruv Kashyap
+* Prashant Nath
+* Demas Fadel Anggara
+* Anuj Rajput
 
 This project draws inspiration from tools like **Notion**, **Obsidian**, and other productivity applications. It was created to fulfill academic requirements and demonstrate full-stack development skills.
 
 ## 🚀 Features
 
-- User authentication and profile management  
-- Create, edit, and delete notes  
-- Organize tasks and personal schedules  
-- Simple and responsive UI  
-- Django-powered backend  
+* User authentication and profile management
+* Create, edit, and delete notes
+* Organize tasks and personal schedules
+* Simple and responsive UI
+* Django-powered backend
 
 ## 🧠 Tech Stack
 
-| Layer       | Technology |
-|------------|------------|
-| Backend    | Python, Django |
-| Frontend   | HTML, CSS |
-| Database   | SQLite |
-| Tools      | Git, GitHub |
+| Layer    | Technology     |
+| -------- | -------------- |
+| Backend  | Python, Django |
+| Frontend | HTML, CSS      |
+| Database | SQLite         |
+| Tools    | Git, GitHub    |
 
 ## 📁 Project Structure
 
 ```
-
 AureMind/
 ├── college_project/
 ├── Django/
@@ -43,47 +49,48 @@ AureMind/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
-````
+```
 
 ## 🛠️ Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/AureMindOrg/AureMind.git
-   cd AureMind
-````
+### 1. Clone the repository
 
-2. **Create and activate a virtual environment**
+```
+git clone https://github.com/AureMindOrg/AureMind.git
+cd AureMind
+```
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # Windows: venv\Scripts\activate
-   ```
+### 2. Create and activate a virtual environment
 
-3. **Install dependencies**
+```
+python -m venv venv
+source venv/bin/activate
+# On Windows: venv\Scripts\activate
+```
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 3. Install dependencies
 
-4. **Apply migrations**
+```
+pip install -r requirements.txt
+```
 
-   ```bash
-   python manage.py migrate
-   ```
+### 4. Apply migrations
 
-5. **Run the development server**
+```
+python manage.py migrate
+```
 
-   ```bash
-   python manage.py runserver
-   ```
+### 5. Run the development server
 
-6. Open your browser and visit:
+```
+python manage.py runserver
+```
 
-   ```
-   http://127.0.0.1:8000/
-   ```
+Open your browser and visit:
+
+```
+http://127.0.0.1:8000/
+```
 
 ## ✅ Usage
 
@@ -108,5 +115,12 @@ This project does not currently include a license. Add one if you plan to distri
 
 Made with ❤️ as a Software Engineering college project.
 
-```
-```
+---
+
+If you want, I can also:
+
+* Add **badges (Python, Django, License)**
+* Make it **more professional for recruiters**
+* Add a **Screenshots section**
+
+Just tell me.
